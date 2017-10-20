@@ -12,11 +12,18 @@ public class TPconversionbis {
 		System.out.print("2- convertir en Celcius");
 		int choice = sc.nextByte();
 		
-		System.out.println("Indiquez la température que vous souhaitez convertir");
-		double tempCelcius = sc.nextDouble();
-		double conversionFarenheit = tempCelcius  * 9 /5 +32;
-		System.out.println(tempCelcius + "° équivaut à " +conversionFarenheit +"F");
+		if(choice == 1 || choice == 2)
+		{
+			System.out.println("Indiquez la température que vous souhaitez convertir");
+			double tempCelcius = sc.nextDouble();
+			double conversionFarenheit = tempCelcius  * 9 /5 +32;
+			System.out.println(tempCelcius + "° équivaut à " +conversionFarenheit +"F");
 
+		}
+		else
+		{
+			System.out.println("Indiquez 1 ou 2");
+		}
 	}
 
 public static double arrondi(double A, int B) {
