@@ -6,6 +6,12 @@ public class TPconversionbis {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Indiquez le type de conversion que vous souhaitez effectuer");
+		System.out.println("1- Convertir en Farenheit");
+		System.out.print("2- convertir en Celcius");
+		int choice = sc.nextByte();
+		
 		System.out.println("Indiquez la température que vous souhaitez convertir");
 		double tempCelcius = sc.nextDouble();
 		double conversionFarenheit = tempCelcius  * 9 /5 +32;
